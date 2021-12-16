@@ -1,6 +1,18 @@
 import Header from "./Header"
+import Footer from "./Footer"
+import Main from "./Main"
+
 const App = () => {
-    return <Header />
+
+    const producto = { titulo: "Producto 1" }
+
+    return (
+        <>
+            <Header producto={producto} saludo="bienvenidoscd" />
+            <Footer />
+            <Main />
+        </>
+    )
 }
 
 export default App;
