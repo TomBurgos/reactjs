@@ -1,14 +1,19 @@
+import CartWidget from "./CartWidget";
 import Nav from "./Nav"
+import { NavLink } from "react-router-dom";
 
-const Header = (parametros) => {
-    parametros.producto.titulo = "producto 2"
-    console.log(parametros.producto.titulo)
+const Header = ({ saludo }) => {
     return (
-        <header>
-            <h1>Tienda</h1>
-            <Nav />
-        </header>)
+        <header id="main-header">
+            
+            <NavLink to="/">
+                <h1>{saludo}</h1>
+            </NavLink>
 
+            <Nav />
+            <CartWidget />
+        </header>
+    )
 }
 
 export default Header;

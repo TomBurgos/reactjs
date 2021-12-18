@@ -1,13 +1,16 @@
 import Button from 'react-bootstrap/Button'
-
+import ItemListContainer from './ItemListContainer'
+import { Routes, Route } from "react-router-dom"
 
 
 const Main = () => {
 
     return (
         <main>
-            <h2>inicio</h2>
-            <button variant="primary">Primary</button>
+            <Routes>
+                <Route path="/" element={<ItemListContainer />} />
+                <Route path="/categoria/:id" element={<ItemListContainer />} />
+            </Routes>
         </main>
     )
 }
