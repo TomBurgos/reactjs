@@ -1,7 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./estilo.css"
-import App from './App';
+import React from "react"
 
-ReactDOM.render( <App/> ,document.getElementById('root'));
+import ReactDOM from "react-dom"
+
+import "./style.css"
+
+import App from "./App"
+
+
+ReactDOM.render(<App/>,document.getElementById("root"))

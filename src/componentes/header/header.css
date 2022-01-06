@@ -1,0 +1,19 @@
+.containerNav{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+
+}
+a{
+    text-decoration: none;
+    color:black;
+    margin: 1rem;
+    padding: 1rem;
+    
+}
+footer{
+    background-color:brown;
+}
+main{
+    display:flex
+}
